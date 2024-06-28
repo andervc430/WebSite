@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario MVC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Registro de Usuarios</h1>
+            <form id="registerForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+
+        <hr class="divider">
+
+        <div class="operations">
+            <h2>Administracion para Usuario</h2>
+            <label for="userId">ID de Usuario:</label>
+            <input type="number" id="userId" name="userId" required>
+            <button onclick="getUser()">Obtener Usuario</button>
+            <button onclick="updateUser()">Actualizar Usuario</button>
+            <button onclick="deleteUser()">Eliminar Usuario</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 ander tarea de progra. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
